@@ -4,19 +4,57 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-slate-100 flex items-center justify-center">
-      <div className="bg-white rounded-2xl shadow-xl p-10 text-center">
-        <h1 className="text-5xl font-bold text-blue-600">
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "#111827",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div
+        style={{
+          background: "#ffffff",
+          padding: "50px",
+          borderRadius: "20px",
+          textAlign: "center",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+          width: "500px",
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "42px",
+            color: "#2563eb",
+            marginBottom: "20px",
+          }}
+        >
           ERP CRM Portal
         </h1>
 
-        <p className="mt-4 text-gray-600 text-lg">
+        <p
+          style={{
+            fontSize: "18px",
+            color: "#6b7280",
+            marginBottom: "30px",
+          }}
+        >
           Welcome to the ERP CRM Management System
         </p>
 
         <button
           onClick={() => navigate("/login")}
-          className="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg"
+          style={{
+            background: "#2563eb",
+            color: "white",
+            border: "none",
+            padding: "15px 30px",
+            borderRadius: "8px",
+            cursor: "pointer",
+            fontSize: "18px",
+            fontWeight: "bold",
+          }}
         >
           Get Started
         </button>
